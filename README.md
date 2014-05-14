@@ -80,13 +80,10 @@ Example : Serial.println(“$ back light on /n”);
 Command for turning off the led backlight:$_back_light_off_/n
 Example : Serial.println(“$ back light off /n”);
 
-
-For communicating on I2c bus the commands are same as described above
-
-Example: Command for turning off the led backlight:$_back_light_off_/n_
-Wire.begin();
-Wire.beginTransmission(4); // transmit to device #4 i.e lcd back pack
-Wire.write("$ back light off /n "); 
-Wire.endTransmission();  
+Command for sending variable 
+Example : int x=10;
+          Serial.print("$ num ");
+          Serial.print(x);
+          Serial.print("/n");
 
 
